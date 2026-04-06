@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Blue Red Agent</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="app">
+    <div class="header">
+      <h2>🧠 Blue & Red Agent</h2>
+      <div id="status">Idle</div>
+    </div>
+
+    <div class="tabs">
+      <button class="tab-btn active" data-tab="run">Run</button>
+      <button class="tab-btn" data-tab="settings">Settings</button>
+    </div>
+
+    <div id="run-tab" class="tab-content active">
+      <textarea id="task" placeholder="Enter your task (e.g. 'Complete the survey')"></textarea>
+      <div class="controls">
+        <button id="run">▶ Run</button>
+        <button id="stop">⏹ Stop</button>
+      </div>
+      <div id="logs"></div>
+    </div>
+
+    <div id="settings-tab" class="tab-content">
+      <label>AI Server URL</label>
+      <input id="server-url" value="http://localhost:3000" />
+      
+      <h4>Vision Mode</h4>
+      <label><input type="radio" name="vision-mode" value="on"> ON</label>
+      <label><input type="radio" name="vision-mode" value="off" checked> OFF</label>
+
+      <h4>Proxy Mode</h4>
+      <label><input type="radio" name="proxy-mode" value="off" checked> Off</label>
+      <label><input type="radio" name="proxy-mode" value="rotate"> Rotate per task</label>
+      <label><input type="radio" name="proxy-mode" value="sticky"> Sticky session</label>
+
+      <h4>AI Mode</h4>
+      <label><input type="radio" name="ai-mode" value="auto" checked> Auto (Failover)</label>
+      <label><input type="radio" name="ai-mode" value="openrouter"> OpenRouter Only</label>
+      <label><input type="radio" name="ai-mode" value="sambanova"> SambaNova Only</label>
+
+      <h4>Speed Mode</h4>
+      <label><input type="radio" name="speed-mode" value="fast" checked> Fast (Cache)</label>
+      <label><input type="radio" name="speed-mode" value="accurate"> Accurate (No Cache)</label>
+
+      <h4>Ultra Stealth</h4>
+      <label class="switch">
+        <input type="checkbox" id="stealth-mode" checked>
+        <span class="slider round"></span>
+      </label>
+      <span class="hint">Human-like timing & clicks</span>
+
+      <p class="hint">Ensure backend is running on port 3000</p>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>

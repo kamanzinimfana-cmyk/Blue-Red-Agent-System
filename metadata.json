@@ -1,0 +1,5 @@
+{
+  "name": "Blue & Red Agent System",
+  "description": "A dual-agent AI system for navigation (Blue) and execution (Red) with hybrid local/cloud switching.",
+  "requestFramePermissions": []
+}

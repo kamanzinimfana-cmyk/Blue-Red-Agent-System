@@ -1,0 +1,17 @@
+{
+  "age": 39,
+  "gender": "Male",
+  "location": "South Africa, Utrecht, 2980",
+  "area": "Rural",
+  "languages": ["English", "IsiZulu"],
+  "marital_status": "Single",
+  "children": 3,
+  "household_size": 9,
+  "housing": "Own",
+  "education": "Degree in Computer Science",
+  "employment": "Full-time",
+  "industry": "Information Technology",
+  "job_title": "Cyber Security Analyst and Developer",
+  "income": "$165,000+",
+  "ethnicity": "African American"
+}
